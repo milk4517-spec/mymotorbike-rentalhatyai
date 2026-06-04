@@ -1,369 +1,113 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MY MOTORBIKE รถเช่าหาดใหญ่</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:#000;
-    color:#fff;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-/* HEADER */
-
-.header{
-    background:#000;
-    text-align:center;
-    padding:30px 20px;
-}
-
-.logo{
-    max-width:450px;
-    width:100%;
-}
-
-.contact-btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#FFD700;
-    color:#000;
-    padding:15px 35px;
-    border-radius:50px;
-    font-size:22px;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-/* HERO */
-
-.hero{
-    background:#111;
-    padding:40px 20px;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:60px;
-    color:#FFD700;
-}
-
-.hero p{
-    font-size:24px;
-    margin-top:10px;
-}
-
-.hero-price{
-    font-size:90px;
-    font-weight:bold;
-    color:#ff0000;
-}
-
-/* GALLERY */
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    padding:30px;
-}
-
-.gallery img{
-    width:100%;
-    border-radius:15px;
-    border:3px solid #FFD700;
-}
-
-/* FEATURES */
-
-.features{
-    padding:40px 20px;
-    background:#111;
-}
-
-.features-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.feature-box{
-    background:#1b1b1b;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
-    border:2px solid #FFD700;
-}
-
-.feature-box h3{
-    color:#FFD700;
-    margin-bottom:10px;
-}
-
-/* PRICE TABLE */
-
-.price-section{
-    padding:50px 20px;
-}
-
-.price-section h2{
-    text-align:center;
-    color:#FFD700;
-    margin-bottom:30px;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-table th{
-    background:#FFD700;
-    color:#000;
-    padding:15px;
-}
-
-table td{
-    padding:15px;
-    text-align:center;
-    border:1px solid #333;
-}
-
-table tr:nth-child(even){
-    background:#111;
-}
-
-/* CONTACT */
-
-.contact{
-    padding:50px 20px;
-    text-align:center;
-    background:#111;
-}
-
-.contact h2{
-    color:#FFD700;
-    margin-bottom:20px;
-}
-
-.contact a{
-    text-decoration:none;
-}
-
-.btn-line{
-    background:#06C755;
-    color:white;
-    padding:15px 30px;
-    border-radius:50px;
-    display:inline-block;
-    margin:10px;
-    font-weight:bold;
-}
-
-.btn-whatsapp{
-    background:#25D366;
-    color:white;
-    padding:15px 30px;
-    border-radius:50px;
-    display:inline-block;
-    margin:10px;
-    font-weight:bold;
-}
-
-.footer{
-    text-align:center;
-    padding:20px;
-    background:#000;
-    color:#999;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <!-- LOGO -->
-    <section class="header">
-        <img src="logo.png" class="logo" alt="MY MOTORBIKE">
-
-        <br>
-
-        <a href="tel:0951744914" class="contact-btn">
-            📞 095-174-4914
-        </a>
-    </section>
-
-    <!-- HERO -->
-    <section class="hero">
-
-        <h1>MY MOTORBIKE</h1>
-
-        <p>รถเช่าหาดใหญ่</p>
-
-        <div class="hero-price">
-            250.- / DAY
-        </div>
-
-        <p>
-            รับรถได้ที่ บขส. | สถานีรถไฟ | เซ็นทรัลหาดใหญ่
-        </p>
-
-    </section>
-
-    <!-- GALLERY -->
-    <section class="gallery">
-
-        <img src="banner1.jpg">
-        <img src="banner2.jpg">
-        <img src="banner3.jpg">
-        <img src="banner4.jpg">
-        <img src="banner5.jpg">
-        <img src="banner6.jpg">
-        <img src="banner7.jpg">
-        <img src="banner8.jpg">
-
-    </section>
-
-    <!-- FEATURES -->
-    <section class="features">
-
-        <div class="features-grid">
-
-            <div class="feature-box">
-                <h3>🪖 หมวกฟรี</h3>
-                <p>ฟรี 2 ใบทุกคัน</p>
-            </div>
-
-            <div class="feature-box">
-                <h3>⛽ น้ำมันเต็มถัง</h3>
-                <p>รับเต็ม คืนเต็ม</p>
-            </div>
-
-            <div class="feature-box">
-                <h3>🛡️ ประกันรถ</h3>
-                <p>ปลอดภัยทุกการเดินทาง</p>
-            </div>
-
-            <div class="feature-box">
-                <h3>🚚 ส่งรถฟรี</h3>
-                <p>ในตัวเมืองหาดใหญ่</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- PRICE -->
-    <section class="price-section">
-
-        <h2>ราคาเช่ารถ</h2>
-
-        <table>
-
-            <tr>
-                <th>รุ่นรถ</th>
-                <th>1 วัน</th>
-            </tr>
-
-            <tr>
-                <td>Honda Scoopy รุ่นเก่า</td>
-                <td>250 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda Zoomer X</td>
-                <td>250 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda Wave 110i</td>
-                <td>250 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda Scoopy รุ่นใหม่</td>
-                <td>300 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda Lead 125cc</td>
-                <td>350 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Yamaha Grand Filano</td>
-                <td>350 บาท</td>
-            </tr>
-
-            <tr>
-                <td>GPX Tuscany 150</td>
-                <td>350 บาท</td>
-            </tr>
-
-            <tr>
-                <td>GPX Drone 150</td>
-                <td>450 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda PCX 150</td>
-                <td>450 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda Forza 300</td>
-                <td>800 บาท</td>
-            </tr>
-
-            <tr>
-                <td>Honda Rebel 300</td>
-                <td>900 บาท</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact">
-
-        <h2>จองรถตอนนี้</h2>
-
-        <p>โทร 095-174-4914</p>
-
-        <a href="https://line.me/ti/p/3VKa7UuYZE" target="_blank">
-            <div class="btn-line">
-                LINE
-            </div>
-        </a>
-
-        <a href="https://wa.me/66951744914" target="_blank">
-            <div class="btn-whatsapp">
-                WhatsApp
-            </div>
-        </a>
-
-    </section>
-
-    <section class="footer">
-        MY MOTORBIKE รถเช่าหาดใหญ่ © 2026
-    </section>
+<!-- เปลี่ยนโลโก้ --><div class="logo">MY MOTORBIKE - รถเช่าหาดใหญ่</div><!-- เปลี่ยน Hero Section --><section class="hero">
+    <div class="hero-content">
+        <h1>MY MOTORBIKE - รถเช่าหาดใหญ่</h1>    <p>
+    บริการเช่ามอเตอร์ไซค์ในหาดใหญ่<br>
+    เช่า 2 วันขึ้นไป รับ-ส่งรถฟรีในเขตเมืองหาดใหญ่
+    </p>
+
+    <p>
+    📞 โทร : 095-174-4914<br>
+    💬 LINE ID : 0951744914
+    </p>
+
+    <p>
+    🇹🇭 ไทย | 🇬🇧 English | 🇲🇾 Bahasa Melayu
+    </p>
+
+    <a href="https://line.me/ti/p/3VKa7UuYZE" target="_blank" class="btn">
+        จองผ่าน LINE
+    </a>
+
+    <a href="tel:0951744914" class="btn">
+        โทรทันที
+    </a>
+
+    <a href="#bikes" class="btn">
+        ดูรถเช่า
+    </a>
 
 </div>
 
-</body>
-</html>
+</section><!-- เปลี่ยนหัวข้อรถเช่า --><h2 class="section-title">รถเช่าของเรา</h2><!-- รถเช่า --><div class="card">
+    <div class="card-body">
+        <h3>Zoomer-X / Scoopy</h3>
+        <p>รถเช่าทั่วไป</p>
+        <div class="price">250 บาท / วัน</div>
+        <p>1,500 บาท / 7 วัน</p>
+        <p>มัดจำ 500 - 1,000 บาท</p>
+    </div>
+</div><div class="card">
+    <div class="card-body">
+        <h3>GPX Tuscany 150cc</h3>
+        <div class="price">350 บาท / วัน</div>
+        <p>900 บาท / 3 วัน</p>
+        <p>1,850 บาท / 7 วัน</p>
+        <p>มัดจำ 500 บาท</p>
+    </div>
+</div><div class="card">
+    <div class="card-body">
+        <h3>Honda PCX 160</h3>
+        <div class="price">450 บาท / วัน</div>
+        <p>มัดจำ 1,000 บาท</p>
+    </div>
+</div><div class="card">
+    <div class="card-body">
+        <h3>Honda Forza 300</h3>
+        <div class="price">900 บาท / วัน</div>
+        <p>2,400 บาท / 3 วัน</p>
+        <p>5,200 บาท / 7 วัน</p>
+        <p>มัดจำ 3,000 บาท</p>
+    </div>
+</div><div class="card">
+    <div class="card-body">
+        <h3>Honda Rebel 300</h3>
+        <div class="price">900 บาท / วัน</div>
+        <p>มัดจำ 3,000 บาท</p>
+    </div>
+</div><!-- จุดรับรถ --><section class="section" id="locations">
+    <h2 class="section-title">จุดรับรถ</h2><div class="locations">
+
+    <div class="location-box">
+        📍<br><br>
+        สถานีขนส่งหาดใหญ่ (บขส.)
+    </div>
+
+    <div class="location-box">
+        📍<br><br>
+        สถานีรถไฟหาดใหญ่
+    </div>
+
+    <div class="location-box">
+        📍<br><br>
+        เซ็นทรัลหาดใหญ่
+    </div>
+
+    <div class="location-box">
+        📍<br><br>
+        โรงแรมในเขตเมืองหาดใหญ่
+    </div>
+
+    <div class="location-box">
+        📍<br><br>
+        ตัวเมืองหาดใหญ่
+    </div>
+
+</div>
+
+</section><!-- ติดต่อ --><section class="contact" id="contact"><h2>ติดต่อจองรถ</h2>
+
+<br>
+
+<a href="https://line.me/ti/p/3VKa7UuYZE" target="_blank">
+    LINE Booking
+</a>
+
+<a href="https://wa.me/66951744914" target="_blank">
+    WhatsApp
+</a>
+
+<p style="margin-top:20px">
+    โทร : 095-174-4914
+</p>
+
+</section>
