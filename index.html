@@ -3,268 +3,367 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hatyai Motorbike Rental</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>MY MOTORBIKE รถเช่าหาดใหญ่</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Noto Sans Thai',sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background:#f7f7f7;
+    background:#000;
+    color:#fff;
 }
 
-header{
-    background:#ff7b00;
-    color:white;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+.header{
+    background:#000;
+    text-align:center;
+    padding:30px 20px;
 }
 
 .logo{
-    font-size:28px;
-    font-weight:700;
+    max-width:450px;
+    width:100%;
 }
 
-nav a{
-    color:white;
+.contact-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#FFD700;
+    color:#000;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:22px;
+    font-weight:bold;
     text-decoration:none;
-    margin-left:20px;
 }
+
+/* HERO */
 
 .hero{
-    min-height:80vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url('https://images.unsplash.com/photo-1558981806-ec527fa84c39');
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    background:#111;
+    padding:40px 20px;
     text-align:center;
-    color:white;
 }
 
-.hero-content h1{
-    font-size:52px;
-    margin-bottom:15px;
+.hero h1{
+    font-size:60px;
+    color:#FFD700;
 }
 
-.hero-content p{
-    font-size:20px;
-    margin-bottom:25px;
-}
-
-.btn{
-    background:#ff7b00;
-    color:white;
-    padding:14px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    display:inline-block;
-}
-
-.section{
-    padding:70px 8%;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:36px;
-}
-
-.bikes{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-body{
-    padding:20px;
-}
-
-.price{
-    color:#ff7b00;
+.hero p{
     font-size:24px;
-    font-weight:bold;
     margin-top:10px;
 }
 
-.locations{
+.hero-price{
+    font-size:90px;
+    font-weight:bold;
+    color:#ff0000;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    border:3px solid #FFD700;
+}
+
+/* FEATURES */
+
+.features{
+    padding:40px 20px;
+    background:#111;
+}
+
+.features-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
-.location-box{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-}
-
-.review{
-    background:white;
+.feature-box{
+    background:#1b1b1b;
     padding:20px;
     border-radius:15px;
-    margin-bottom:15px;
+    text-align:center;
+    border:2px solid #FFD700;
 }
 
-.contact{
-    background:#222;
-    color:white;
+.feature-box h3{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+/* PRICE TABLE */
+
+.price-section{
+    padding:50px 20px;
+}
+
+.price-section h2{
     text-align:center;
-    padding:60px 20px;
+    color:#FFD700;
+    margin-bottom:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#FFD700;
+    color:#000;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+table tr:nth-child(even){
+    background:#111;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:50px 20px;
+    text-align:center;
+    background:#111;
+}
+
+.contact h2{
+    color:#FFD700;
+    margin-bottom:20px;
 }
 
 .contact a{
-    color:white;
     text-decoration:none;
-    margin:10px;
-    display:inline-block;
-    padding:12px 20px;
-    background:#25D366;
-    border-radius:8px;
 }
 
-footer{
+.btn-line{
+    background:#06C755;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    display:inline-block;
+    margin:10px;
+    font-weight:bold;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    display:inline-block;
+    margin:10px;
+    font-weight:bold;
+}
+
+.footer{
     text-align:center;
     padding:20px;
-    background:#111;
-    color:#ccc;
+    background:#000;
+    color:#999;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">Hatyai Bike Rental</div>
+<div class="container">
 
-    <nav>
-        <a href="#bikes">รถเช่า</a>
-        <a href="#locations">จุดรับรถ</a>
-        <a href="#reviews">รีวิว</a>
-        <a href="#contact">ติดต่อ</a>
-    </nav>
-</header>
+    <!-- LOGO -->
+    <section class="header">
+        <img src="logo.png" class="logo" alt="MY MOTORBIKE">
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>เช่ามอเตอร์ไซค์ในหาดใหญ่</h1>
-        <p>รับรถได้ที่สนามบิน สถานีรถไฟ และในเมือง</p>
-        <a href="#contact" class="btn">จองรถตอนนี้</a>
-    </div>
-</section>
+        <br>
 
-<section class="section" id="bikes">
-    <h2 class="section-title">รถยอดนิยม</h2>
+        <a href="tel:0951744914" class="contact-btn">
+            📞 095-174-4914
+        </a>
+    </section>
 
-    <div class="bikes">
+    <!-- HERO -->
+    <section class="hero">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39">
-            <div class="card-body">
-                <h3>Honda Click 125i</h3>
-                <p>ประหยัดน้ำมัน ขับง่าย</p>
-                <div class="price">250 บาท/วัน</div>
+        <h1>MY MOTORBIKE</h1>
+
+        <p>รถเช่าหาดใหญ่</p>
+
+        <div class="hero-price">
+            250.- / DAY
+        </div>
+
+        <p>
+            รับรถได้ที่ บขส. | สถานีรถไฟ | เซ็นทรัลหาดใหญ่
+        </p>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+
+        <img src="banner1.jpg">
+        <img src="banner2.jpg">
+        <img src="banner3.jpg">
+        <img src="banner4.jpg">
+        <img src="banner5.jpg">
+        <img src="banner6.jpg">
+        <img src="banner7.jpg">
+        <img src="banner8.jpg">
+
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="features-grid">
+
+            <div class="feature-box">
+                <h3>🪖 หมวกฟรี</h3>
+                <p>ฟรี 2 ใบทุกคัน</p>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65">
-            <div class="card-body">
-                <h3>Yamaha Grand Filano</h3>
-                <p>สวยหรู เหมาะเที่ยวเมือง</p>
-                <div class="price">300 บาท/วัน</div>
+            <div class="feature-box">
+                <h3>⛽ น้ำมันเต็มถัง</h3>
+                <p>รับเต็ม คืนเต็ม</p>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f">
-            <div class="card-body">
-                <h3>Honda ADV 160</h3>
-                <p>สายท่องเที่ยว เดินทางไกล</p>
-                <div class="price">550 บาท/วัน</div>
+            <div class="feature-box">
+                <h3>🛡️ ประกันรถ</h3>
+                <p>ปลอดภัยทุกการเดินทาง</p>
             </div>
+
+            <div class="feature-box">
+                <h3>🚚 ส่งรถฟรี</h3>
+                <p>ในตัวเมืองหาดใหญ่</p>
+            </div>
+
         </div>
 
-    </div>
-</section>
+    </section>
 
-<section class="section" id="locations">
-    <h2 class="section-title">จุดรับรถ</h2>
+    <!-- PRICE -->
+    <section class="price-section">
 
-    <div class="locations">
-        <div class="location-box">
-            ✈️<br><br>
-            สนามบินหาดใหญ่
-        </div>
+        <h2>ราคาเช่ารถ</h2>
 
-        <div class="location-box">
-            🚉<br><br>
-            สถานีรถไฟหาดใหญ่
-        </div>
+        <table>
 
-        <div class="location-box">
-            🏙️<br><br>
-            ตัวเมืองหาดใหญ่
-        </div>
-    </div>
-</section>
+            <tr>
+                <th>รุ่นรถ</th>
+                <th>1 วัน</th>
+            </tr>
 
-<section class="section" id="reviews">
-    <h2 class="section-title">รีวิวลูกค้า</h2>
+            <tr>
+                <td>Honda Scoopy รุ่นเก่า</td>
+                <td>250 บาท</td>
+            </tr>
 
-    <div class="review">
-        ⭐⭐⭐⭐⭐ รถใหม่มาก รับรถที่สนามบินสะดวก
-    </div>
+            <tr>
+                <td>Honda Zoomer X</td>
+                <td>250 บาท</td>
+            </tr>
 
-    <div class="review">
-        ⭐⭐⭐⭐⭐ บริการดี ส่งรถตรงเวลา
-    </div>
+            <tr>
+                <td>Honda Wave 110i</td>
+                <td>250 บาท</td>
+            </tr>
 
-    <div class="review">
-        ⭐⭐⭐⭐⭐ ราคาไม่แพง แนะนำเลย
-    </div>
-</section>
+            <tr>
+                <td>Honda Scoopy รุ่นใหม่</td>
+                <td>300 บาท</td>
+            </tr>
 
-<section class="contact" id="contact">
-    <h2>ติดต่อจองรถ</h2>
-    <br>
+            <tr>
+                <td>Honda Lead 125cc</td>
+                <td>350 บาท</td>
+            </tr>
 
-    <a href="#">LINE Official</a>
-    <a href="#">WhatsApp</a>
+            <tr>
+                <td>Yamaha Grand Filano</td>
+                <td>350 บาท</td>
+            </tr>
 
-    <p style="margin-top:20px">
-        โทร: 08X-XXX-XXXX
-    </p>
-</section>
+            <tr>
+                <td>GPX Tuscany 150</td>
+                <td>350 บาท</td>
+            </tr>
 
-<footer>
-    © 2026 Hatyai Bike Rental. All Rights Reserved.
-</footer>
+            <tr>
+                <td>GPX Drone 150</td>
+                <td>450 บาท</td>
+            </tr>
+
+            <tr>
+                <td>Honda PCX 150</td>
+                <td>450 บาท</td>
+            </tr>
+
+            <tr>
+                <td>Honda Forza 300</td>
+                <td>800 บาท</td>
+            </tr>
+
+            <tr>
+                <td>Honda Rebel 300</td>
+                <td>900 บาท</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+
+        <h2>จองรถตอนนี้</h2>
+
+        <p>โทร 095-174-4914</p>
+
+        <a href="https://line.me/ti/p/3VKa7UuYZE" target="_blank">
+            <div class="btn-line">
+                LINE
+            </div>
+        </a>
+
+        <a href="https://wa.me/66951744914" target="_blank">
+            <div class="btn-whatsapp">
+                WhatsApp
+            </div>
+        </a>
+
+    </section>
+
+    <section class="footer">
+        MY MOTORBIKE รถเช่าหาดใหญ่ © 2026
+    </section>
+
+</div>
 
 </body>
 </html>
